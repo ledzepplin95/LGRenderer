@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject
+	ProjectType="Intel C++ Project"
+	Version="11.1"
+	Name="pkpm3dLG"
+	ProjectGUID="{A2AC5078-C789-46DE-86CD-E51735A77349}"
+	VCNestedProjectGUID="{36C8F449-59BF-4315-ADEB-4A79A716D875}"
+	VCNestedProjectFileName="pkpm3dLG.vcproj">
+	<Configurations/>
+	<Files/>
+</VisualStudioProject>

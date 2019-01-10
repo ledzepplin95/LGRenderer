@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36C8F449-59BF-4315-ADEB-4A79A716D875}</ProjectGuid>
+    <RootNamespace>pkpm3dLG</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>E:\liuzhihai\src\opengl\Render\cxImage\zlib;E:\liuzhihai\src\opengl\Render\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cximaged.lib;libdcrd.lib;mngd.lib;jasperd.lib;jbigd.lib;tiffd.lib;zlibd.lib;jpegd.lib;pngd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>E:\liuzhihai\src\opengl\Render\ll\Debug\pkpm3dLG.dll</OutputFile>
+      <AdditionalLibraryDirectories>E:\liuzhihai\src\opengl\Render\cxImage\lib;E:\liuzhihai\src\opengl\Render\boost\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\pkpm3dLG.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>E:\liuzhihai\src\opengl\Render\cxImage\zlib;E:\liuzhihai\src\opengl\Render\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cximage.lib;mng.lib;libdcr.lib;jasper.lib;jbig.lib;tiff.lib;zlib.lib;jpeg.lib;png.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>E:\liuzhihai\src\opengl\Render\ll\Release\pkpm3dLG.dll</OutputFile>
+      <AdditionalLibraryDirectories>E:\liuzhihai\src\opengl\Render\cxImage\lib;E:\liuzhihai\src\opengl\Render\boost\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\pkpm3dLG.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AccelerationStructure.cpp" />
+    <ClCompile Include="AccelerationStructureFactory.cpp" />
+    <ClCompile Include="AmbientOcclusionGIEngine.cpp" />
+    <ClCompile Include="AmbientOcclusionShader.cpp" />
+    <ClCompile Include="AnisotropicWardShader.cpp" />
+    <ClCompile Include="AsciiFileLGAPI.cpp" />
+    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="BanchoffSurface.cpp" />
+    <ClCompile Include="Benchmark.cpp" />
+    <ClCompile Include="BenchmarkFramework.cpp" />
+    <ClCompile Include="BenchmarkTest.cpp" />
+    <ClCompile Include="BezierMesh.cpp" />
+    <ClCompile Include="BinaryFileLGAPI.cpp" />
+    <ClCompile Include="Bitmap.cpp" />
+    <ClCompile Include="BitmapBlack.cpp" />
+    <ClCompile Include="BitmapG8.cpp" />
+    <ClCompile Include="BitmapGA8.cpp" />
+    <ClCompile Include="BitmapReader.cpp" />
+    <ClCompile Include="BitmapRGB8.cpp" />
+    <ClCompile Include="BitmapRGBA8.cpp" />
+    <ClCompile Include="BitmapRGBE.cpp" />
+    <ClCompile Include="BitmapWriter.cpp" />
+    <ClCompile Include="BitmapXYZ.cpp" />
+    <ClCompile Include="BlackbodySpectrum.cpp" />
+    <ClCompile Include="BlackmanHarrisFilter.cpp" />
+    <ClCompile Include="BMPBitmapReader.cpp" />
+    <ClCompile Include="BoundingBox.cpp" />
+    <ClCompile Include="BoundingIntervalHierarchy.cpp" />
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="BoxFilter.cpp" />
+    <ClCompile Include="BucketOrder.cpp" />
+    <ClCompile Include="BucketOrderFactory.cpp" />
+    <ClCompile Include="BucketRenderer.cpp" />
+    <ClCompile Include="BumpMappingModifier.cpp" />
+    <ClCompile Include="ByteUtil.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraLens.cpp" />
+    <ClCompile Include="CatmullRomFilter.cpp" />
+    <ClCompile Include="CausticPhotonMap.cpp" />
+    <ClCompile Include="CausticPhotonMapInterface.cpp" />
+    <ClCompile Include="ChromaticitySpectrum.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="ColorEncoder.cpp" />
+    <ClCompile Include="ColorFactory.cpp" />
+    <ClCompile Include="ColumnBucketOrder.cpp" />
+    <ClCompile Include="ConstantShader.cpp" />
+    <ClCompile Include="ConstantSpectralCurve.cpp" />
+    <ClCompile Include="CornellBox.cpp" />
+    <ClCompile Include="CubeGrid.cpp" />
+    <ClCompile Include="CubicBSpline.cpp" />
+    <ClCompile Include="Cylinder.cpp" />
+    <ClCompile Include="DiagonalBucketOrder.cpp" />
+    <ClCompile Include="DiffuseShader.cpp" />
+    <ClCompile Include="DirectionalSpotLight.cpp" />
+    <ClCompile Include="Display.cpp" />
+    <ClCompile Include="EXRBitmapWriter.cpp" />
+    <ClCompile Include="FakeGIEngine.cpp" />
+    <ClCompile Include="FileDisplay.cpp" />
+    <ClCompile Include="FileLGAPI.cpp" />
+    <ClCompile Include="FileMesh.cpp" />
+    <ClCompile Include="FileUtil.cpp" />
+    <ClCompile Include="Filter.cpp" />
+    <ClCompile Include="FindCxImageFileType.cpp" />
+    <ClCompile Include="FisheyeLens.cpp" />
+    <ClCompile Include="FloatArray.cpp" />
+    <ClCompile Include="FrameDisplay.cpp" />
+    <ClCompile Include="GaussianFilter.cpp" />
+    <ClCompile Include="GenericBitmap.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="GIEngine.cpp" />
+    <ClCompile Include="GlassShader.cpp" />
+    <ClCompile Include="GlobalPhotonMap.cpp" />
+    <ClCompile Include="GlobalPhotonMapInterface.cpp" />
+    <ClCompile Include="GridPhotonMap.cpp" />
+    <ClCompile Include="Gumbo.cpp" />
+    <ClCompile Include="Hair.cpp" />
+    <ClCompile Include="HDRBitmapReader.cpp" />
+    <ClCompile Include="HDRBitmapWriter.cpp" />
+    <ClCompile Include="HilbertBucketOrder.cpp" />
+    <ClCompile Include="IDShader.cpp" />
+    <ClCompile Include="IGIBitmapReader.cpp" />
+    <ClCompile Include="IGIBitmapWriter.cpp" />
+    <ClCompile Include="ImageBasedLight.cpp" />
+    <ClCompile Include="ImageSampler.cpp" />
+    <ClCompile Include="ImgPipeDisplay.cpp" />
+    <ClCompile Include="Instance.cpp" />
+    <ClCompile Include="InstanceList.cpp" />
+    <ClCompile Include="InstantGI.cpp" />
+    <ClCompile Include="IntArray.cpp" />
+    <ClCompile Include="IntersectionState.cpp" />
+    <ClCompile Include="InvertedBucketOrder.cpp" />
+    <ClCompile Include="IrradianceCacheGIEngine.cpp" />
+    <ClCompile Include="IrregularSpectralCurve.cpp" />
+    <ClCompile Include="JPGBitmapReader.cpp" />
+    <ClCompile Include="JuliaFractal.cpp" />
+    <ClCompile Include="KDTree.cpp" />
+    <ClCompile Include="LanczosFilter.cpp" />
+    <ClCompile Include="LGAPI.cpp" />
+    <ClCompile Include="LGAPIInterface.cpp" />
+    <ClCompile Include="LGMemoryAllocator.cpp" />
+    <ClCompile Include="LGObject.cpp" />
+    <ClCompile Include="LGRendering.cpp" />
+    <ClCompile Include="LGSearchPath.cpp" />
+    <ClCompile Include="LightSample.cpp" />
+    <ClCompile Include="LightServer.cpp" />
+    <ClCompile Include="LightSource.cpp" />
+    <ClCompile Include="MathUtil.cpp" />
+    <ClCompile Include="Matrix4.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="MirrorShader.cpp" />
+    <ClCompile Include="MitchellFilter.cpp" />
+    <ClCompile Include="Modifier.cpp" />
+    <ClCompile Include="MovingMatrix4.cpp" />
+    <ClCompile Include="MultipassRenderer.cpp" />
+    <ClCompile Include="NormalMapModifier.cpp" />
+    <ClCompile Include="NormalShader.cpp" />
+    <ClCompile Include="NullAccelerator.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="OrthoNormalBasis.cpp" />
+    <ClCompile Include="ParameterList.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="ParticleSurface.cpp" />
+    <ClCompile Include="PathTracingGIEngine.cpp" />
+    <ClCompile Include="PerlinModifier.cpp" />
+    <ClCompile Include="PerlinScalar.cpp" />
+    <ClCompile Include="PerlinVector.cpp" />
+    <ClCompile Include="PhongShader.cpp" />
+    <ClCompile Include="PhotonStore.cpp" />
+    <ClCompile Include="PinholeLens.cpp" />
+    <ClCompile Include="pkpm3dLG.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="PluginRegistry.cpp" />
+    <ClCompile Include="PNGBitmapReader.cpp" />
+    <ClCompile Include="PNGBitmapWriter.cpp" />
+    <ClCompile Include="Point2.cpp" />
+    <ClCompile Include="Point3.cpp" />
+    <ClCompile Include="PointLight.cpp" />
+    <ClCompile Include="PrimIDShader.cpp" />
+    <ClCompile Include="PrimitiveList.cpp" />
+    <ClCompile Include="ProgressiveRenderer.cpp" />
+    <ClCompile Include="QMC.cpp" />
+    <ClCompile Include="QuadMesh.cpp" />
+    <ClCompile Include="QuickGrayShader.cpp" />
+    <ClCompile Include="RA2Parser.cpp" />
+    <ClCompile Include="RA3Parser.cpp" />
+    <ClCompile Include="RandomBucketOrder.cpp" />
+    <ClCompile Include="Ray.cpp" />
+    <ClCompile Include="RealtimeBenchmark.cpp" />
+    <ClCompile Include="RegularSpectralCurve.cpp" />
+    <ClCompile Include="RenderDoc.cpp" />
+    <ClCompile Include="RenderFrameWnd.cpp" />
+    <ClCompile Include="RenderingFrame.cpp" />
+    <ClCompile Include="RenderObject.cpp" />
+    <ClCompile Include="RenderObjectMap.cpp" />
+    <ClCompile Include="RenderZoomView2.cpp" />
+    <ClCompile Include="RGBSpace.cpp" />
+    <ClCompile Include="RowBucketOrder.cpp" />
+    <ClCompile Include="Runnable.cpp" />
+    <ClCompile Include="SCAbstractParser.cpp" />
+    <ClCompile Include="SCAsciiParser.cpp" />
+    <ClCompile Include="SCBinaryParser.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneParser.cpp" />
+    <ClCompile Include="SCParser.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShadingCache.cpp" />
+    <ClCompile Include="ShadingState.cpp" />
+    <ClCompile Include="ShaveRibParser.cpp" />
+    <ClCompile Include="ShinyDiffuseShader.cpp" />
+    <ClCompile Include="SimpleRenderer.cpp" />
+    <ClCompile Include="SimpleShader.cpp" />
+    <ClCompile Include="SincFilter.cpp" />
+    <ClCompile Include="Solvers.cpp" />
+    <ClCompile Include="SpectralCurve.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="SphereFlake.cpp" />
+    <ClCompile Include="SphereLight.cpp" />
+    <ClCompile Include="SphericalLens.cpp" />
+    <ClCompile Include="SpiralBucketOrder.cpp" />
+    <ClCompile Include="SpotLight.cpp" />
+    <ClCompile Include="Statistics.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StrUtil.cpp" />
+    <ClCompile Include="SunSkyLight.cpp" />
+    <ClCompile Include="Teapot.cpp" />
+    <ClCompile Include="Tesselatable.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureCache.cpp" />
+    <ClCompile Include="TexturedAmbientOcclusionShader.cpp" />
+    <ClCompile Include="TexturedDiffuseShader.cpp" />
+    <ClCompile Include="TexturedPhongShader.cpp" />
+    <ClCompile Include="TexturedShinyDiffuseShader.cpp" />
+    <ClCompile Include="TexturedWardShader.cpp" />
+    <ClCompile Include="TGABitmapReader.cpp" />
+    <ClCompile Include="TGABitmapWriter.cpp" />
+    <ClCompile Include="ThinLens.cpp" />
+    <ClCompile Include="ThreadThing.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Torus.cpp" />
+    <ClCompile Include="TriangleFilter.cpp" />
+    <ClCompile Include="TriangleMesh.cpp" />
+    <ClCompile Include="TriangleMeshLight.cpp" />
+    <ClCompile Include="TriParser.cpp" />
+    <ClCompile Include="UberShader.cpp" />
+    <ClCompile Include="UniformGrid.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
+    <ClCompile Include="UVShader.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="ViewCausticsShader.cpp" />
+    <ClCompile Include="ViewGlobalPhotonsShader.cpp" />
+    <ClCompile Include="ViewIrradianceShader.cpp" />
+    <ClCompile Include="WireframeShader.cpp" />
+    <ClCompile Include="XYZColor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pkpm3dLG.def" />
+    <None Include="res\LG002.ico" />
+    <None Include="res\pkpm3dLG.rc2" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccelerationStructure.h" />
+    <ClInclude Include="AccelerationStructureFactory.h" />
+    <ClInclude Include="AmbientOcclusionGIEngine.h" />
+    <ClInclude Include="AmbientOcclusionShader.h" />
+    <ClInclude Include="AnisotropicWardShader.h" />
+    <ClInclude Include="AsciiFileLGAPI.h" />
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="BanchoffSurface.h" />
+    <ClInclude Include="Benchmark.h" />
+    <ClInclude Include="BenchmarkFramework.h" />
+    <ClInclude Include="BenchmarkTest.h" />
+    <ClInclude Include="BezierMesh.h" />
+    <ClInclude Include="BinaryFileLGAPI.h" />
+    <ClInclude Include="Bitmap.h" />
+    <ClInclude Include="BitmapBlack.h" />
+    <ClInclude Include="BitmapG8.h" />
+    <ClInclude Include="BitmapGA8.h" />
+    <ClInclude Include="BitmapReader.h" />
+    <ClInclude Include="BitmapRGB8.h" />
+    <ClInclude Include="BitmapRGBA8.h" />
+    <ClInclude Include="BitmapRGBE.h" />
+    <ClInclude Include="BitmapWriter.h" />
+    <ClInclude Include="BitmapXYZ.h" />
+    <ClInclude Include="BlackbodySpectrum.h" />
+    <ClInclude Include="BlackmanHarrisFilter.h" />
+    <ClInclude Include="BMPBitmapReader.h" />
+    <ClInclude Include="BoundingBox.h" />
+    <ClInclude Include="BoundingIntervalHierarchy.h" />
+    <ClInclude Include="Box.h" />
+    <ClInclude Include="BoxFilter.h" />
+    <ClInclude Include="BucketOrder.h" />
+    <ClInclude Include="BucketOrderFactory.h" />
+    <ClInclude Include="BucketRenderer.h" />
+    <ClInclude Include="BumpMappingModifier.h" />
+    <ClInclude Include="ByteUtil.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraLens.h" />
+    <ClInclude Include="CatmullRomFilter.h" />
+    <ClInclude Include="CausticPhotonMap.h" />
+    <ClInclude Include="CausticPhotonMapInterface.h" />
+    <ClInclude Include="CharLess.h" />
+    <ClInclude Include="ChromaticitySpectrum.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorEncoder.h" />
+    <ClInclude Include="ColorFactory.h" />
+    <ClInclude Include="ColumnBucketOrder.h" />
+    <ClInclude Include="Comparable.h" />
+    <ClInclude Include="ConstantShader.h" />
+    <ClInclude Include="ConstantSpectralCurve.h" />
+    <ClInclude Include="CornellBox.h" />
+    <ClInclude Include="CubeGrid.h" />
+    <ClInclude Include="CubicBSpline.h" />
+    <ClInclude Include="Cylinder.h" />
+    <ClInclude Include="DiagonalBucketOrder.h" />
+    <ClInclude Include="DiffuseShader.h" />
+    <ClInclude Include="DirectionalSpotLight.h" />
+    <ClInclude Include="Display.h" />
+    <ClInclude Include="EXRBitmapWriter.h" />
+    <ClInclude Include="FakeGIEngine.h" />
+    <ClInclude Include="FileDisplay.h" />
+    <ClInclude Include="FileLGAPI.h" />
+    <ClInclude Include="FileMesh.h" />
+    <ClInclude Include="FileUtil.h" />
+    <ClInclude Include="Filter.h" />
+    <ClInclude Include="FindCxImageFileType.h" />
+    <ClInclude Include="FisheyeLens.h" />
+    <ClInclude Include="FloatArray.h" />
+    <ClInclude Include="FrameDisplay.h" />
+    <ClInclude Include="GaussianFilter.h" />
+    <ClInclude Include="GenericBitmap.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="GIEngine.h" />
+    <ClInclude Include="GlassShader.h" />
+    <ClInclude Include="GlobalPhotonMap.h" />
+    <ClInclude Include="GlobalPhotonMapInterface.h" />
+    <ClInclude Include="GridPhotonMap.h" />
+    <ClInclude Include="Gumbo.h" />
+    <ClInclude Include="Hair.h" />
+    <ClInclude Include="HDRBitmapReader.h" />
+    <ClInclude Include="HDRBitmapWriter.h" />
+    <ClInclude Include="HilbertBucketOrder.h" />
+    <ClInclude Include="IDShader.h" />
+    <ClInclude Include="IGIBitmapReader.h" />
+    <ClInclude Include="IGIBitmapWriter.h" />
+    <ClInclude Include="ImageBasedLight.h" />
+    <ClInclude Include="ImageSampler.h" />
+    <ClInclude Include="ImgPipeDisplay.h" />
+    <ClInclude Include="Instance.h" />
+    <ClInclude Include="InstanceList.h" />
+    <ClInclude Include="InstantGI.h" />
+    <ClInclude Include="IntArray.h" />
+    <ClInclude Include="IntersectionState.h" />
+    <ClInclude Include="InvertedBucketOrder.h" />
+    <ClInclude Include="IrradianceCacheGIEngine.h" />
+    <ClInclude Include="IrregularSpectralCurve.h" />
+    <ClInclude Include="JPGBitmapReader.h" />
+    <ClInclude Include="JuliaFractal.h" />
+    <ClInclude Include="KDTree.h" />
+    <ClInclude Include="LanczosFilter.h" />
+    <ClInclude Include="LG.h" />
+    <ClInclude Include="LGAPI.h" />
+    <ClInclude Include="LGAPIInterface.h" />
+    <ClInclude Include="LGDef.h" />
+    <ClInclude Include="LGMemoryAllocator.h" />
+    <ClInclude Include="LGMemoryPool.h" />
+    <ClInclude Include="LGObject.h" />
+    <ClInclude Include="LGRendering.h" />
+    <ClInclude Include="LGSearchPath.h" />
+    <ClInclude Include="LightSample.h" />
+    <ClInclude Include="LightServer.h" />
+    <ClInclude Include="LightSource.h" />
+    <ClInclude Include="MathUtil.h" />
+    <ClInclude Include="Matrix4.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="MirrorShader.h" />
+    <ClInclude Include="MitchellFilter.h" />
+    <ClInclude Include="Modifier.h" />
+    <ClInclude Include="MovingMatrix4.h" />
+    <ClInclude Include="MultipassRenderer.h" />
+    <ClInclude Include="NormalMapModifier.h" />
+    <ClInclude Include="NormalShader.h" />
+    <ClInclude Include="NullAccelerator.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="OrthoNormalBasis.h" />
+    <ClInclude Include="ParameterList.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="ParticleSurface.h" />
+    <ClInclude Include="PathTracingGIEngine.h" />
+    <ClInclude Include="PerlinModifier.h" />
+    <ClInclude Include="PerlinScalar.h" />
+    <ClInclude Include="PerlinVector.h" />
+    <ClInclude Include="PhongShader.h" />
+    <ClInclude Include="PhotonStore.h" />
+    <ClInclude Include="PinholeLens.h" />
+    <ClInclude Include="pkpm3dLG.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="PluginRegistry.h" />
+    <ClInclude Include="Plugins.h" />
+    <ClInclude Include="PNGBitmapReader.h" />
+    <ClInclude Include="PNGBitmapWriter.h" />
+    <ClInclude Include="Point2.h" />
+    <ClInclude Include="Point3.h" />
+    <ClInclude Include="PointLight.h" />
+    <ClInclude Include="PrimIDShader.h" />
+    <ClInclude Include="PrimitiveList.h" />
+    <ClInclude Include="ProgressiveRenderer.h" />
+    <ClInclude Include="QMC.h" />
+    <ClInclude Include="QuadMesh.h" />
+    <ClInclude Include="QuickGrayShader.h" />
+    <ClInclude Include="RA2Parser.h" />
+    <ClInclude Include="RA3Parser.h" />
+    <ClInclude Include="RandomBucketOrder.h" />
+    <ClInclude Include="Ray.h" />
+    <ClInclude Include="RealtimeBenchmark.h" />
+    <ClInclude Include="RegularSpectralCurve.h" />
+    <ClInclude Include="RenderDoc.h" />
+    <ClInclude Include="RenderFrameWnd.h" />
+    <ClInclude Include="RenderingFrame.h" />
+    <ClInclude Include="RenderObject.h" />
+    <ClInclude Include="RenderObjectMap.h" />
+    <ClInclude Include="RenderZoomView2.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RGBSpace.h" />
+    <ClInclude Include="RowBucketOrder.h" />
+    <ClInclude Include="Runnable.h" />
+    <ClInclude Include="SCAbstractParser.h" />
+    <ClInclude Include="SCAsciiParser.h" />
+    <ClInclude Include="SCBinaryParser.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneParser.h" />
+    <ClInclude Include="SCParser.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShadingCache.h" />
+    <ClInclude Include="ShadingState.h" />
+    <ClInclude Include="ShaveRibParser.h" />
+    <ClInclude Include="ShinyDiffuseShader.h" />
+    <ClInclude Include="SimpleRenderer.h" />
+    <ClInclude Include="SimpleShader.h" />
+    <ClInclude Include="SincFilter.h" />
+    <ClInclude Include="Solvers.h" />
+    <ClInclude Include="SpectralCurve.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="SphereFlake.h" />
+    <ClInclude Include="SphereLight.h" />
+    <ClInclude Include="SphericalLens.h" />
+    <ClInclude Include="SpiralBucketOrder.h" />
+    <ClInclude Include="SpotLight.h" />
+    <ClInclude Include="Statistics.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StrUtil.h" />
+    <ClInclude Include="SunSkyLight.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Teapot.h" />
+    <ClInclude Include="Tesselatable.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureCache.h" />
+    <ClInclude Include="TexturedAmbientOcclusionShader.h" />
+    <ClInclude Include="TexturedDiffuseShader.h" />
+    <ClInclude Include="TexturedPhongShader.h" />
+    <ClInclude Include="TexturedShinyDiffuseShader.h" />
+    <ClInclude Include="TexturedWardShader.h" />
+    <ClInclude Include="TGABitmapReader.h" />
+    <ClInclude Include="TGABitmapWriter.h" />
+    <ClInclude Include="ThinLens.h" />
+    <ClInclude Include="ThreadThing.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Torus.h" />
+    <ClInclude Include="TriangleFilter.h" />
+    <ClInclude Include="TriangleMesh.h" />
+    <ClInclude Include="TriangleMeshLight.h" />
+    <ClInclude Include="TriParser.h" />
+    <ClInclude Include="UberShader.h" />
+    <ClInclude Include="UniformGrid.h" />
+    <ClInclude Include="UserInterface.h" />
+    <ClInclude Include="UVShader.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="ViewCausticsShader.h" />
+    <ClInclude Include="ViewGlobalPhotonsShader.h" />
+    <ClInclude Include="ViewIrradianceShader.h" />
+    <ClInclude Include="WireframeShader.h" />
+    <ClInclude Include="xfile.h" />
+    <ClInclude Include="ximacfg.h" />
+    <ClInclude Include="ximadef.h" />
+    <ClInclude Include="ximage.h" />
+    <ClInclude Include="xiofile.h" />
+    <ClInclude Include="xmemfile.h" />
+    <ClInclude Include="XYZColor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="pkpm3dLG.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="pkpm3dLG.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

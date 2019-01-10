@@ -1,0 +1,6 @@
+; pkpm3dLG.def : Declares the module parameters for the DLL.
+
+LIBRARY      "pkpm3dLG"
+
+EXPORTS
+

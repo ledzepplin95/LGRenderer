@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="pkpm3dLG">
+</Property><Property Name="Solution File" Value="D:\Render\pkpm3dLG\pkpm3dLG.sln">
+</Property><Property Name="Date" Value="2012年5月11日">
+</Property><Property Name="Time" Value="20:00">
+</Property></Properties><Event ErrorLevel="0" Project="pkpm3dLG" Source="pkpm3dLG.vcproj" Description="Converting project file 'D:\Render\pkpm3dLG\pkpm3dLG.vcproj'.">
+</Event><Event ErrorLevel="1" Project="pkpm3dLG" Source="pkpm3dLG.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="pkpm3dLG" Source="pkpm3dLG.vcproj" Description="MSB8012: $(TargetPath) ('D:\Render\pkpm3dLG\Debug\pkpm3dLG.dll') does not match the Linker's OutputFile property value 'E:\pkpm\lib\pkpm3d_sdk41\run_debug\pkpm3dLG.dll' ('E:\pkpm\lib\pkpm3d_sdk41\run_debug\pkpm3dLG.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="pkpm3dLG" Source="pkpm3dLG.vcproj" Description="MSB8012: $(TargetPath) ('D:\Render\pkpm3dLG\Release\pkpm3dLG.dll') does not match the Linker's OutputFile property value 'E:\pkpm\lib\pkpm3d_sdk41\run_release\pkpm3dLG.dll' ('E:\pkpm\lib\pkpm3d_sdk41\run_release\pkpm3dLG.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="pkpm3dLG" Source="pkpm3dLG.vcproj" Description="Done converting to new project file 'D:\Render\pkpm3dLG\pkpm3dLG.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="pkpm3dLG" Source="pkpm3dLG.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="pkpm3dLG.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="pkpm3dLG.sln" Description="Converted">
+</Event></UpgradeLog>
